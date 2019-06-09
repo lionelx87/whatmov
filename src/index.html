@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>WhatMov</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container section">
+        <div class="row">
+            <div class="col s12">
+                <nav>
+                    <div class="nav-wrapper">
+                        <form>
+                            <div class="input-field">
+                                <input id="search" type="search" placeholder="Search movie..." required>
+                                <label class="label-icon" for="search"><i class="material-icons">search</i></label>
+                                <i class="material-icons">close</i>
+                            </div>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row center-align">
+            <div class="col s12">
+                <a id="mostPopular" class="waves-effect waves-light btn">+ Populares</a>
+                <a id="inTheatres" class="waves-effect waves-light btn">En Cartelera</a>
+                <a id="popularKids" class="waves-effect waves-light btn">Infantiles</a>
+                <a id="bestMovies" class="waves-effect waves-light btn">Mejores del Año</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div class="divider"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container section">
+        <div id="spinnerMovies" class="spinner hide">
+            <div class="double-bounce1"></div>
+            <div class="double-bounce2"></div>
+        </div>
+        <div class="row">
+            <div id="movies-list" class="cards-container col s12">
+
+            </div>        
+        </div>
+    </div>
+
+    <div class="container section">
+        <!-- Modal Structure -->
+        <div id="movie" class="modal">
+            <div class="modal-content">
+                <div id="spinnerMovie" class="spinner hide">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+                <div id="movieDetails" class="hide">
+                    <h4 id="title" class="title">Modal Header</h4>
+                    <div class="row">
+                        <div class="col s6 center-align">
+                            <img id="poster" class="responsive-img">
+                        </div>
+                        <div class="col s6 center-align">
+                            <p class="title">Sinopsis:</p>
+                            <p id="overview"></p>
+                            <p class="title">Géneros:</p>
+                            <p id="genres"></p>
+                            <p class="title">Estreno</p>
+                            <p id="releaseDate"></p>
+                            <a id="link" href=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="#!" class="modal-close waves-effect waves-green btn-flat">Aceptar</a>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
